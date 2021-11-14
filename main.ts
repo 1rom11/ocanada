@@ -42,6 +42,6 @@ music.playTone(349, music.beat(BeatFraction.Whole))
 music.playTone(349, music.beat(BeatFraction.Half))
 music.playTone(349, music.beat(BeatFraction.Quarter))
 music.playTone(392, music.beat(BeatFraction.Half))
-basic.forever(function on_forever() {
-    
+basic.forever(function () {
+	
 })
