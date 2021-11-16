@@ -1,4 +1,13 @@
-basic.forever(function () {
+function Canada (flag: Image) {
+    fleg = images.createBigImage(`
+        # # # . . . . # # #
+        # # # . # # . # # #
+        # # # . # # . # # #
+        # # # . # # . # # #
+        # # # . . . . # # #
+        `)
+}
+function song () {
     music.playTone(165, music.beat(BeatFraction.Whole))
     music.playTone(196, music.beat(BeatFraction.Whole))
     music.playTone(196, music.beat(BeatFraction.Half))
@@ -49,55 +58,12 @@ basic.forever(function () {
     }
     music.playTone(131, music.beat(BeatFraction.Breve))
     music.rest(music.beat(BeatFraction.Whole))
+}
+let fleg: Image = null
+Canada(fleg)
+basic.forever(function () {
+    song()
 })
 basic.forever(function () {
-    basic.showLeds(`
-        # # # # .
-        # # # # .
-        # # # # .
-        # # # # .
-        # # # # .
-        `)
-    basic.showLeds(`
-        # # # . .
-        # # # . #
-        # # # . #
-        # # # . #
-        # # # . .
-        `)
-    basic.showLeds(`
-        # # . . .
-        # # . # .
-        # # . # .
-        # # . # .
-        # # . . .
-        `)
-    basic.showLeds(`
-        # . . . #
-        # . # . #
-        # . # . #
-        # . # . #
-        # . . . #
-        `)
-    basic.showLeds(`
-        . . . # #
-        . # . # #
-        . # . # #
-        . # . # #
-        . . . # #
-        `)
-    basic.showLeds(`
-        . . # # #
-        # . # # #
-        # . # # #
-        # . # # #
-        . . # # #
-        `)
-    basic.showLeds(`
-        . # # # #
-        . # # # #
-        . # # # #
-        . # # # #
-        . # # # #
-        `)
+    fleg.scrollImage(1, 200)
 })
